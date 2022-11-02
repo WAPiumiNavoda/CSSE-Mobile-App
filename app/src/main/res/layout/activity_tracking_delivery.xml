@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrackingDelivery">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="413dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="5dp"
+        android:text="Place The Order"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="26dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="171dp"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/txtItem1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="15dp"
+                android:text="Rought Sand"
+                android:textSize="25dp"
+                android:textStyle="bold"></TextView>
+
+            <ImageButton
+                android:id="@+id/btnEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="46dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="156dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_toEndOf="@+id/txtItem1"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/pen"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/txtPurchase1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtItem1"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="28dp"
+                android:text="Purchased quantity :"
+                android:textSize="20dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/txtRecieved1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtPurchase1"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="12dp"
+                android:text="Recieved quantity    :"
+                android:textSize="20dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/txtPurchValue1"
+                android:layout_width="42dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtItem1"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="26dp"
+                android:layout_toEndOf="@+id/txtPurchase1"
+                android:text="30"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextRecivQun1"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtPurchValue1"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@+id/txtRecieved1"
+                android:inputType="text"
+                android:text="10"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="26dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="171dp"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/txtItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="15dp"
+                android:text="Rought Sand"
+                android:textSize="25dp"
+                android:textStyle="bold"></TextView>
+
+            <ImageButton
+                android:layout_width="39dp"
+                android:layout_height="47dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="149dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="15dp"
+                android:layout_toEndOf="@+id/txtItem"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/pen"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+
+            <TextView
+                android:id="@+id/txtPurchase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtItem"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="28dp"
+                android:text="Purchased quantity :"
+                android:textSize="20dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/txtRecieved"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtPurchase"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="12dp"
+                android:text="Recieved quantity    :"
+                android:textSize="20dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/txtPurchValue"
+                android:layout_width="42dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtItem"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="26dp"
+                android:layout_toEndOf="@+id/txtPurchase"
+                android:text="20"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextRecivQun"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtPurchValue"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@+id/txtRecieved"
+                android:inputType="text"
+                android:text="15"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

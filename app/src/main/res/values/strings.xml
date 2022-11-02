@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">INNDUSTRY 4.O</string>
+    <string name="searchTopic">Request Food</string>
+    <string name="sub_searchTopic">Find foods near you</string>
+    <string name="sub_searchTopicSec">"Please enter your location and Food name to find food near you "</string>
+    <string name="search_button">Search</string>
+    <string name="addRequesTopic">" Request Form"</string>
+    <string name="requestFormTopic">Requsision Order</string>
+    <string name="reqInput1">Your Name</string>
+    <string name="requestFormNameInput">Your Name</string>
+    <string name="requestFormLocationInput">Current Location</string>
+    <string name="requesatFormSubTopic">Enter you Food item request details Here</string>
+    <string name="requestFormAddressInput">Address</string>
+    <string name="requestFormPhone">Phone No</string>
+    <string name="requestFormDate">Date</string>
+    <string name="requestFromTime">Time</string>
+    <string name="summeryTopicMain">Summery  From the sender</string>
+    <string name="updatetopic">Update Form</string>
+</resources>
